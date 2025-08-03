@@ -4,6 +4,57 @@ import numpy as np
 import pandas as pd
 import json
 
+# Custom CSS: tema hijau-pink pastel
+st.markdown("""
+    <style>
+    /* Ubah warna latar dan font */
+    .stApp {
+        background-color: #fff5f7;
+        color: #2d3436;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Ubah warna tombol */
+    .stButton > button {
+        background-color: #81c784; /* Hijau lembut */
+        color: white;
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 8px;
+    }
+
+    .stButton > button:hover {
+        background-color: #66bb6a;
+        color: white;
+    }
+
+    /* Ubah warna sidebar */
+    .css-1d391kg, .css-1d391kg.e1fqkh3o3 {
+        background-color: #ffe4ec !important;
+    }
+
+    /* Judul */
+    .title-style {
+        font-size: 36px;
+        color: #d81b60;
+        font-weight: bold;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    /* Header section */
+    h1, h2, h3 {
+        color: #4caf50;
+    }
+
+    /* Kotak input */
+    .stNumberInput>div>div>input {
+        background-color: #fff;
+    }
+
+    </style>
+""", unsafe_allow_html=True)
+
 # Konfigurasi tampilan halaman
 st.set_page_config(
     page_title="Deteksi Dini Diabetes",
